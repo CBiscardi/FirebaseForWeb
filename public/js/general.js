@@ -24,6 +24,7 @@ $(() => {
       console.log('Permiso otorgado')
       return messaging.getToken()
     }).then(token =>{
+      console.log(token)
       const db = firebase.firestore()
       db.collection('tokens').doc(token).set({token : token})
         .catch(error =>{ console.log(`Error al insertar el token en la BD => ${error}`) })
@@ -33,6 +34,7 @@ $(() => {
       messaging.getToken()
         .then(token =>{
           console.log('El token se ha renovado')
+          console.log(token)
           const db = firebase.firestore()
           db.collection('tokens').doc(token).set({token : token})
             .catch(error =>{ console.log(`Error al insertar el token en la BD => ${error}`) })

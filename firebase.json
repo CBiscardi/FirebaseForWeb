@@ -8,7 +8,7 @@
     ],
     "redirects": [
       {
-        "source": "/post",
+        "source": "/posts",
         "destination": "/",
         "type": 301
       }

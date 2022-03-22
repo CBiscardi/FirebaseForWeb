@@ -1,0 +1,39 @@
+{
+  "name": "blog-geek",
+  "version": "1.0.0",
+  "description": "Blog Geek",
+  "main": "app/general.js",
+  "scripts": {
+    "test": "no test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jggomez/blogvideos-ucc.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Juan Guillermo Gómez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jggomez/blogvideos-ucc/issues"
+  },
+  "homepage": "https://github.com/jggomez/blogvideos-ucc#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "del": "^2.2.2",
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.3",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-stylus": "^2.6.0",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "firebase": "^9.4.1",
+    "n": "^8.0.2"
+  }
+}

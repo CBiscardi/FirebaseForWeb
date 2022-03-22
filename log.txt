@@ -1,0 +1,385 @@
+# npm audit report
+
+clean-css  <4.1.11
+Regular Expression Denial of Service in clean-css - https://github.com/advisories/GHSA-wxhq-pm8v-cw75
+No fix available
+node_modules/gulp-minify-css/node_modules/clean-css
+  gulp-minify-css  *
+  Depends on vulnerable versions of clean-css
+  Depends on vulnerable versions of gulp-util
+  node_modules/gulp-minify-css
+
+decompress  <4.2.1
+Severity: critical
+Path Traversal in decompress - https://github.com/advisories/GHSA-qgfr-5hqp-vrw9
+fix available via `npm audit fix --force`
+Will install gulp-imagemin@8.0.0, which is a breaking change
+node_modules/decompress
+  bin-build  2.1.1 - 2.2.0
+  Depends on vulnerable versions of decompress
+  Depends on vulnerable versions of download
+  node_modules/bin-build
+  gulp-decompress  <=2.0.1
+  Depends on vulnerable versions of decompress
+  Depends on vulnerable versions of gulp-util
+  node_modules/gulp-decompress
+    download  4.0.0 - 5.0.0
+    Depends on vulnerable versions of caw
+    Depends on vulnerable versions of gulp-decompress
+    node_modules/download
+      bin-wrapper  >=0.4.0
+      Depends on vulnerable versions of bin-version-check
+      Depends on vulnerable versions of download
+      node_modules/bin-wrapper
+        gifsicle  3.0.0 - 3.0.4
+        Depends on vulnerable versions of bin-wrapper
+        node_modules/gifsicle
+          imagemin-gifsicle  4.2.0 - 5.2.0
+          Depends on vulnerable versions of gifsicle
+          node_modules/imagemin-gifsicle
+            gulp-imagemin  3.0.0 - 7.1.0
+            Depends on vulnerable versions of imagemin-gifsicle
+            Depends on vulnerable versions of imagemin-jpegtran
+            Depends on vulnerable versions of imagemin-svgo
+            node_modules/gulp-imagemin
+        jpegtran-bin  3.0.0 - 3.2.0
+        Depends on vulnerable versions of bin-wrapper
+        node_modules/jpegtran-bin
+          imagemin-jpegtran  4.2.0 - 5.0.2
+          Depends on vulnerable versions of jpegtran-bin
+          node_modules/imagemin-jpegtran
+        optipng-bin  3.0.0 - 4.0.0
+        Depends on vulnerable versions of bin-wrapper
+        node_modules/optipng-bin
+          imagemin-optipng  4.3.0 - 5.2.1
+          Depends on vulnerable versions of optipng-bin
+          node_modules/imagemin-optipng
+
+glob-parent  <5.1.2
+Severity: high
+Regular expression denial of service - https://github.com/advisories/GHSA-ww39-953v-wcq6
+fix available via `npm audit fix --force`
+Will install gulp@4.0.2, which is a breaking change
+node_modules/glob-parent
+  glob-stream  0.2.0 - 6.1.0
+  Depends on vulnerable versions of glob
+  Depends on vulnerable versions of glob-parent
+  Depends on vulnerable versions of minimatch
+  node_modules/decompress/node_modules/glob-stream
+  node_modules/download/node_modules/glob-stream
+  node_modules/glob-stream
+  node_modules/gulp/node_modules/glob-stream
+    vinyl-fs  >=2.4.2 || <=1.0.0
+    Depends on vulnerable versions of glob-stream
+    Depends on vulnerable versions of glob-stream
+    node_modules/gulp/node_modules/vinyl-fs
+    node_modules/vinyl-fs
+      gulp  2.6.1 - 3.9.1
+      Depends on vulnerable versions of gulp-util
+      Depends on vulnerable versions of vinyl-fs
+      node_modules/gulp
+      gulp-useref  >=3.1.4
+      Depends on vulnerable versions of vinyl-fs
+      node_modules/gulp-useref
+
+is-svg  2.1.0 - 4.2.2
+Severity: high
+ReDOS in IS-SVG - https://github.com/advisories/GHSA-r8j5-h5cx-65gg
+Regular Expression Denial of Service (ReDoS) - https://github.com/advisories/GHSA-7r28-3m3f-r2pr
+fix available via `npm audit fix`
+node_modules/is-svg
+
+lodash  <=4.17.20
+Severity: critical
+Command Injection in lodash - https://github.com/advisories/GHSA-35jh-r3h4-6jhm
+Prototype Pollution in lodash - https://github.com/advisories/GHSA-jf85-cpcp-j695
+Regular Expression Denial of Service (ReDoS) in lodash - https://github.com/advisories/GHSA-x5rq-j2xg-h7qm
+Prototype Pollution in lodash - https://github.com/advisories/GHSA-fvqr-27wr-82fm
+Prototype Pollution in lodash - https://github.com/advisories/GHSA-p6mc-m468-83gw
+fix available via `npm audit fix`
+node_modules/globule/node_modules/lodash
+  globule  <=1.1.0
+  Depends on vulnerable versions of lodash
+  Depends on vulnerable versions of minimatch
+  node_modules/globule
+    gaze  0.4.0 - 1.0.0
+    Depends on vulnerable versions of globule
+    node_modules/gaze
+      glob-watcher  <=2.0.0
+      Depends on vulnerable versions of gaze
+      node_modules/glob-watcher
+
+lodash.template  <4.5.0
+Severity: critical
+Prototype Pollution in lodash - https://github.com/advisories/GHSA-jf85-cpcp-j695
+fix available via `npm audit fix --force`
+Will install gulp@4.0.2, which is a breaking change
+node_modules/lodash.template
+  gulp-util  >=1.1.0
+  Depends on vulnerable versions of lodash.template
+  node_modules/gulp-util
+    gulp  2.6.1 - 3.9.1
+    Depends on vulnerable versions of gulp-util
+    Depends on vulnerable versions of vinyl-fs
+    node_modules/gulp
+    gulp-decompress  <=2.0.1
+    Depends on vulnerable versions of decompress
+    Depends on vulnerable versions of gulp-util
+    node_modules/gulp-decompress
+      download  4.0.0 - 5.0.0
+      Depends on vulnerable versions of caw
+      Depends on vulnerable versions of gulp-decompress
+      node_modules/download
+        bin-build  2.1.1 - 2.2.0
+        Depends on vulnerable versions of decompress
+        Depends on vulnerable versions of download
+        node_modules/bin-build
+        bin-wrapper  >=0.4.0
+        Depends on vulnerable versions of bin-version-check
+        Depends on vulnerable versions of download
+        node_modules/bin-wrapper
+          gifsicle  3.0.0 - 3.0.4
+          Depends on vulnerable versions of bin-wrapper
+          node_modules/gifsicle
+            imagemin-gifsicle  4.2.0 - 5.2.0
+            Depends on vulnerable versions of gifsicle
+            node_modules/imagemin-gifsicle
+              gulp-imagemin  3.0.0 - 7.1.0
+              Depends on vulnerable versions of imagemin-gifsicle
+              Depends on vulnerable versions of imagemin-jpegtran
+              Depends on vulnerable versions of imagemin-svgo
+              node_modules/gulp-imagemin
+          jpegtran-bin  3.0.0 - 3.2.0
+          Depends on vulnerable versions of bin-wrapper
+          node_modules/jpegtran-bin
+            imagemin-jpegtran  4.2.0 - 5.0.2
+            Depends on vulnerable versions of jpegtran-bin
+            node_modules/imagemin-jpegtran
+          optipng-bin  3.0.0 - 4.0.0
+          Depends on vulnerable versions of bin-wrapper
+          node_modules/optipng-bin
+            imagemin-optipng  4.3.0 - 5.2.1
+            Depends on vulnerable versions of optipng-bin
+            node_modules/imagemin-optipng
+    gulp-minify-css  *
+    Depends on vulnerable versions of clean-css
+    Depends on vulnerable versions of gulp-util
+    node_modules/gulp-minify-css
+
+minimatch  <3.0.2
+Severity: high
+Regular Expression Denial of Service in minimatch - https://github.com/advisories/GHSA-hxm2-r34f-qmc5
+fix available via `npm audit fix --force`
+Will install gulp@4.0.2, which is a breaking change
+node_modules/decompress/node_modules/minimatch
+node_modules/download/node_modules/minimatch
+node_modules/globule/node_modules/minimatch
+node_modules/gulp/node_modules/minimatch
+  glob  3.0.0 - 5.0.14
+  Depends on vulnerable versions of minimatch
+  node_modules/globule/node_modules/glob
+  node_modules/gulp/node_modules/glob
+    glob-stream  0.2.0 - 6.1.0
+    Depends on vulnerable versions of glob
+    Depends on vulnerable versions of glob-parent
+    Depends on vulnerable versions of minimatch
+    node_modules/decompress/node_modules/glob-stream
+    node_modules/download/node_modules/glob-stream
+    node_modules/glob-stream
+    node_modules/gulp/node_modules/glob-stream
+      vinyl-fs  >=2.4.2 || <=1.0.0
+      Depends on vulnerable versions of glob-stream
+      Depends on vulnerable versions of glob-stream
+      node_modules/gulp/node_modules/vinyl-fs
+      node_modules/vinyl-fs
+        gulp  2.6.1 - 3.9.1
+        Depends on vulnerable versions of gulp-util
+        Depends on vulnerable versions of vinyl-fs
+        node_modules/gulp
+        gulp-useref  >=3.1.4
+        Depends on vulnerable versions of vinyl-fs
+        node_modules/gulp-useref
+  globule  <=1.1.0
+  Depends on vulnerable versions of lodash
+  Depends on vulnerable versions of minimatch
+  node_modules/globule
+    gaze  0.4.0 - 1.0.0
+    Depends on vulnerable versions of globule
+    node_modules/gaze
+      glob-watcher  <=2.0.0
+      Depends on vulnerable versions of gaze
+      node_modules/glob-watcher
+
+nth-check  <2.0.1
+Severity: moderate
+Inefficient Regular Expression Complexity in nth-check - https://github.com/advisories/GHSA-rp65-9cf3-cjxr
+fix available via `npm audit fix --force`
+Will install gulp-imagemin@8.0.0, which is a breaking change
+node_modules/nth-check
+  css-select  <=3.1.0
+  Depends on vulnerable versions of nth-check
+  node_modules/css-select
+    svgo  1.0.0 - 1.3.2
+    Depends on vulnerable versions of css-select
+    node_modules/svgo
+      imagemin-svgo  5.2.3 || 6.0.0 - 8.0.0
+      Depends on vulnerable versions of svgo
+      node_modules/imagemin-svgo
+        gulp-imagemin  3.0.0 - 7.1.0
+        Depends on vulnerable versions of imagemin-gifsicle
+        Depends on vulnerable versions of imagemin-jpegtran
+        Depends on vulnerable versions of imagemin-svgo
+        node_modules/gulp-imagemin
+
+semver-regex  <3.1.3
+Severity: moderate
+Regular Expression Denial of Service (ReDOS) - https://github.com/advisories/GHSA-44c6-4v22-4mhx
+fix available via `npm audit fix --force`
+Will install gulp-imagemin@8.0.0, which is a breaking change
+node_modules/semver-regex
+  find-versions  <=3.2.0
+  Depends on vulnerable versions of meow
+  Depends on vulnerable versions of semver-regex
+  node_modules/find-versions
+    bin-version  <=4.0.0
+    Depends on vulnerable versions of find-versions
+    node_modules/bin-version
+      bin-version-check  <=4.0.0
+      Depends on vulnerable versions of bin-version
+      node_modules/bin-version-check
+        bin-wrapper  >=0.4.0
+        Depends on vulnerable versions of bin-version-check
+        Depends on vulnerable versions of download
+        node_modules/bin-wrapper
+          gifsicle  3.0.0 - 3.0.4
+          Depends on vulnerable versions of bin-wrapper
+          node_modules/gifsicle
+            imagemin-gifsicle  4.2.0 - 5.2.0
+            Depends on vulnerable versions of gifsicle
+            node_modules/imagemin-gifsicle
+              gulp-imagemin  3.0.0 - 7.1.0
+              Depends on vulnerable versions of imagemin-gifsicle
+              Depends on vulnerable versions of imagemin-jpegtran
+              Depends on vulnerable versions of imagemin-svgo
+              node_modules/gulp-imagemin
+          jpegtran-bin  3.0.0 - 3.2.0
+          Depends on vulnerable versions of bin-wrapper
+          node_modules/jpegtran-bin
+            imagemin-jpegtran  4.2.0 - 5.0.2
+            Depends on vulnerable versions of jpegtran-bin
+            node_modules/imagemin-jpegtran
+          optipng-bin  3.0.0 - 4.0.0
+          Depends on vulnerable versions of bin-wrapper
+          node_modules/optipng-bin
+            imagemin-optipng  4.3.0 - 5.2.1
+            Depends on vulnerable versions of optipng-bin
+            node_modules/imagemin-optipng
+
+trim-newlines  <3.0.1
+Severity: high
+Regular Expression Denial of Service in trim-newlines - https://github.com/advisories/GHSA-7p7h-4mm5-852v
+fix available via `npm audit fix --force`
+Will install gulp-imagemin@8.0.0, which is a breaking change
+node_modules/trim-newlines
+  meow  3.4.0 - 5.0.0
+  Depends on vulnerable versions of trim-newlines
+  node_modules/meow
+    find-versions  <=3.2.0
+    Depends on vulnerable versions of meow
+    Depends on vulnerable versions of semver-regex
+    node_modules/find-versions
+      bin-version  <=4.0.0
+      Depends on vulnerable versions of find-versions
+      node_modules/bin-version
+        bin-version-check  <=4.0.0
+        Depends on vulnerable versions of bin-version
+        node_modules/bin-version-check
+          bin-wrapper  >=0.4.0
+          Depends on vulnerable versions of bin-version-check
+          Depends on vulnerable versions of download
+          node_modules/bin-wrapper
+            gifsicle  3.0.0 - 3.0.4
+            Depends on vulnerable versions of bin-wrapper
+            node_modules/gifsicle
+              imagemin-gifsicle  4.2.0 - 5.2.0
+              Depends on vulnerable versions of gifsicle
+              node_modules/imagemin-gifsicle
+                gulp-imagemin  3.0.0 - 7.1.0
+                Depends on vulnerable versions of imagemin-gifsicle
+                Depends on vulnerable versions of imagemin-jpegtran
+                Depends on vulnerable versions of imagemin-svgo
+                node_modules/gulp-imagemin
+            jpegtran-bin  3.0.0 - 3.2.0
+            Depends on vulnerable versions of bin-wrapper
+            node_modules/jpegtran-bin
+              imagemin-jpegtran  4.2.0 - 5.0.2
+              Depends on vulnerable versions of jpegtran-bin
+              node_modules/imagemin-jpegtran
+            optipng-bin  3.0.0 - 4.0.0
+            Depends on vulnerable versions of bin-wrapper
+            node_modules/optipng-bin
+              imagemin-optipng  4.3.0 - 5.2.1
+              Depends on vulnerable versions of optipng-bin
+              node_modules/imagemin-optipng
+
+tunnel-agent  <0.6.0
+Severity: moderate
+Memory Exposure in tunnel-agent - https://github.com/advisories/GHSA-xc7v-wxcw-j472
+fix available via `npm audit fix --force`
+Will install gulp-imagemin@8.0.0, which is a breaking change
+node_modules/tunnel-agent
+  caw  <=2.0.0
+  Depends on vulnerable versions of tunnel-agent
+  node_modules/caw
+    download  4.0.0 - 5.0.0
+    Depends on vulnerable versions of caw
+    Depends on vulnerable versions of gulp-decompress
+    node_modules/download
+      bin-build  2.1.1 - 2.2.0
+      Depends on vulnerable versions of decompress
+      Depends on vulnerable versions of download
+      node_modules/bin-build
+      bin-wrapper  >=0.4.0
+      Depends on vulnerable versions of bin-version-check
+      Depends on vulnerable versions of download
+      node_modules/bin-wrapper
+        gifsicle  3.0.0 - 3.0.4
+        Depends on vulnerable versions of bin-wrapper
+        node_modules/gifsicle
+          imagemin-gifsicle  4.2.0 - 5.2.0
+          Depends on vulnerable versions of gifsicle
+          node_modules/imagemin-gifsicle
+            gulp-imagemin  3.0.0 - 7.1.0
+            Depends on vulnerable versions of imagemin-gifsicle
+            Depends on vulnerable versions of imagemin-jpegtran
+            Depends on vulnerable versions of imagemin-svgo
+            node_modules/gulp-imagemin
+        jpegtran-bin  3.0.0 - 3.2.0
+        Depends on vulnerable versions of bin-wrapper
+        node_modules/jpegtran-bin
+          imagemin-jpegtran  4.2.0 - 5.0.2
+          Depends on vulnerable versions of jpegtran-bin
+          node_modules/imagemin-jpegtran
+        optipng-bin  3.0.0 - 4.0.0
+        Depends on vulnerable versions of bin-wrapper
+        node_modules/optipng-bin
+          imagemin-optipng  4.3.0 - 5.2.1
+          Depends on vulnerable versions of optipng-bin
+          node_modules/imagemin-optipng
+
+url-regex  *
+Severity: high
+Regular expression denial of service in url-regex - https://github.com/advisories/GHSA-v4rh-8p82-6h5w
+fix available via `npm audit fix`
+node_modules/url-regex
+
+41 vulnerabilities (1 low, 9 moderate, 14 high, 17 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
